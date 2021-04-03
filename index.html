@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>TeamMatch</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Team<span>Match</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="image/menu.svg" alt="Open Navigation">
+
+            <nav>
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="image/close_white_24dp.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Misión & Visión</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+                <ul class="secundary-nav">
+                    <li class="contact"><a href="#">Contact</a></li>
+                    <li class="sing-up"><a href="#">Sing up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+            <video src="video/presentation.mp4" muted loop autoplay></video>
+
+            <div class="text">
+                <h2>Organiza tus torneos</h2>
+                <h3>de manera facil</h3>
+                <p>Conéctate con jugadores de comunidades cercanas
+                    en base a filtros previos, con el fin de completar
+                    equipos/partidas para tu torneo local.</p>
+                <a href="#">Explorar</a>
+            </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
+    <section class="Contact">
+        <ul class="social">
+            <li></li>
+        </ul>
+    </section>
+
+
+</body>
+</html>
