@@ -2,13 +2,39 @@
 
 body {
     margin: 0;
-    background: #f2f2f2;
     font-family: 'Poppins', sans-serif;
 }
 
 .text{
     position: relative;
     z-index: 10;
+}
+
+.subhead2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+}
+
+.About_us {
+
+    li {
+    background: orange;
+    text-align: center;
+    padding: 2em 1em;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+    list-style:none;
+    
+        img {
+        width: 5em;
+        height: 5em;
+        border-radius: 50%;
+        margin-top: -4.5em;
+        }
+
+    }
+
 }
 
 
@@ -229,4 +255,12 @@ nav.menu-btn{
     }
 
 
+    .About_us ul{
+        display: flex;
+
+        li {
+            margin: 5 5em;
+            margin-right: 1em;
+        }
+    }
 }
